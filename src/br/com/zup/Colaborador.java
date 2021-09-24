@@ -49,7 +49,7 @@ public class Colaborador extends Pessoa {
 
     //Métodos
     //Calcular Salario
-    public double salarioColaborador(){
+    public double calcularSalario(){
         double salarioLiquido = salarioBase - imposto;
         return salarioLiquido;
     }

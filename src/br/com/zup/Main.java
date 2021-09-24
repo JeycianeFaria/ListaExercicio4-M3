@@ -18,6 +18,24 @@ public class Main {
         System.out.printf("Valor Saldo: R$ %.2f%n",fornecedor.obterSaldo());
 
 
+        //Instanciando Colaborador
+        Colaborador colaborador = new Colaborador("Marcia", "Rua Z", "555555555", 75,1500,200);
+
+        System.out.println("\n==================================");
+        System.out.println("Nome Colaborador: " + colaborador.getNome());
+        System.out.println("Endereço: " + colaborador.getEndereco());
+        System.out.println("Telefone: " + colaborador.getTelefone());
+        System.out.println("Código Setor: " + colaborador.getCodigoSetor());
+        System.out.printf("Salário Base: R$ %.2f%n", colaborador.getSalarioBase());
+        System.out.printf("Imposto: R$ %.2f%n", colaborador.getImposto());
+        System.out.printf("Salário Liquido: R$%.2f%n",colaborador.calcularSalario());
+
+
+        //Instanciando Administrador
+
+        //Teste Administrador
+
+
     }
 
 }
