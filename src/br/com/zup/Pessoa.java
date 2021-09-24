@@ -45,4 +45,14 @@ public class Pessoa {
         this.telefone = telefone;
     }
 
+    //Métodos
+    //Exibição
+    public void exibirDados(){
+        System.out.println("\n==================================");
+        System.out.println("Nome: " + getNome());
+        System.out.println("Endereço: " + getEndereco());
+        System.out.println("Telefone: " + getTelefone());
+
+    }
+
 }

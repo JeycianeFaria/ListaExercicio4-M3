@@ -54,4 +54,19 @@ public class Colaborador extends Pessoa {
         return salarioLiquido;
     }
 
+
+    //Para exibir dados
+    @Override
+    public void exibirDados(){
+        System.out.println("\n==================================");
+        System.out.println("Nome Colaborador: " + getNome());
+        System.out.println("Endereço: " + getEndereco());
+        System.out.println("Telefone: " + getTelefone());
+        System.out.println("Código Setor: " + getCodigoSetor());
+        System.out.printf("Salário Base: R$ %.2f%n", getSalarioBase());
+        System.out.printf("Imposto: R$ %.2f%n",getImposto());
+        System.out.printf("Salário Liquido: R$%.2f%n",calcularSalario());
+
+    }
+
 }

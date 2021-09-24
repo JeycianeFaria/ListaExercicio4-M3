@@ -36,4 +36,19 @@ public class Administrador extends Colaborador {
         return salarioLiquido;
     }
 
+    @Override
+    public void exibirDados(){
+
+        System.out.println("\n==================================");
+        System.out.println("Nome Administrador: " + getNome());
+        System.out.println("Endereço: " + getEndereco());
+        System.out.println("Telefone: " + getTelefone());
+        System.out.println("Código Setor: " + getCodigoSetor());
+        System.out.printf("Salário Base: R$ %.2f%n", getSalarioBase());
+        System.out.printf("Imposto: R$ %.2f%n", getImposto());
+        System.out.printf("Ajuda de Custo: R$ %.2f%n",getAjudaDeCusto());
+        System.out.printf("Salário Liquido: R$%.2f%n",calcularSalario());
+
+    }
+
 }

@@ -44,4 +44,19 @@ public class Fornecedor extends Pessoa{
         return saldoFornecedor;
     }
 
+
+    // Para exibir dados
+    @Override
+    public void exibirDados(){
+
+        System.out.println("\n==================================");
+        System.out.println("Nome Fornecedor: " + getNome());
+        System.out.println("Endereço: " + getEndereco());
+        System.out.println("Telefone: " + getTelefone());
+        System.out.printf("Valor Crédito: R$ %.2f%n",getValorCredito());
+        System.out.printf("Valor Divida: R$ %.2f%n",getValorDivida());
+        System.out.printf("Valor Saldo: R$ %.2f%n",obterSaldo());
+
+    }
+
 }
