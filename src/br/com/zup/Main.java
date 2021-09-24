@@ -19,7 +19,7 @@ public class Main {
 
 
         //Instanciando Colaborador
-        Colaborador colaborador = new Colaborador("Marcia", "Rua Z", "555555555", 75,1500,200);
+        Colaborador colaborador = new Colaborador("Marcia", "Rua Z", "555555555", 275,1500,200);
 
         System.out.println("\n==================================");
         System.out.println("Nome Colaborador: " + colaborador.getNome());
@@ -32,9 +32,18 @@ public class Main {
 
 
         //Instanciando Administrador
+        Administrador administrador = new Administrador("Joana", "Rua D", "55555555", 145263,2000,350,500);
+
 
         //Teste Administrador
-
+        System.out.println("\n==================================");
+        System.out.println("Nome Administrador: " + administrador.getNome());
+        System.out.println("Endereço: " + administrador.getEndereco());
+        System.out.println("Telefone: " + administrador.getTelefone());
+        System.out.println("Código Setor: " + administrador.getCodigoSetor());
+        System.out.printf("Salário Base: R$ %.2f%n", administrador.getSalarioBase());
+        System.out.printf("Imposto: R$ %.2f%n", administrador.getImposto());
+        System.out.printf("Salário Liquido: R$%.2f%n",administrador.calcularSalario());
 
     }
 
