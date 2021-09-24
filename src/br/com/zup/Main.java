@@ -24,7 +24,6 @@ public class Main {
         //Teste Administrador
         administrador.exibirDados();
 
-
     }
 
 }
