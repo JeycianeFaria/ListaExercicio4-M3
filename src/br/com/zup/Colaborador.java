@@ -58,10 +58,7 @@ public class Colaborador extends Pessoa {
     //Para exibir dados
     @Override
     public void exibirDados(){
-        System.out.println("\n==================================");
-        System.out.println("Nome Colaborador: " + getNome());
-        System.out.println("Endereço: " + getEndereco());
-        System.out.println("Telefone: " + getTelefone());
+        super.exibirDados();
         System.out.println("Código Setor: " + getCodigoSetor());
         System.out.printf("Salário Base: R$ %.2f%n", getSalarioBase());
         System.out.printf("Imposto: R$ %.2f%n",getImposto());
